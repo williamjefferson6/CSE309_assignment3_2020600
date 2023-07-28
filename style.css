@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Ubuntu:wght@300&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    margin: 0%;
+    font-family: 'Belanosima', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#banner {
+    background-image: url(back.jpg);
+    background-size: cover;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    height: 90%;
+}
+
+#content p {
+    font-weight: bolder;
+    font-size: 1.2rem;
+    background: linear-gradient(to left, #ffcc6c, #f39a4c, #f39a4c, #ffcc6c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 15px;
+}
+
+.header {
+    display: flex;
+    padding: 0.5rem 0rem;
+}
+
+.header img {
+    width: 3.5rem;
+    height: 3.5rem;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+#form {
+    background: linear-gradient(to left, #120f24, #141422, #10101a, rgb(2, 2, 17));
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formcontent {
+    width: 70%;
+    align-items: start;
+}
+
+#form h1 {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+#form p {
+    font-weight: bolder;
+    font-size: 1.2rem;
+    background: linear-gradient(to left, #ffcc6c, #f39a4c, #f39a4c, #ffcc6c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.input1 {
+    width: 100%;
+    height: 5vh;
+    border-radius: 10px;
+}
+
+.input2 {
+    width: 100%;
+    height: 20vh;
+    border-radius: 10px;
+    resize: none;
+}
+
+.input3{
+    background: linear-gradient(to left, #ffcc6c, #f39a4c, #f39a4c, #ffcc6c);
+    width: 100px;
+    font-size: 20px;
+    font-weight: 150;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.input3:hover{
+    background: linear-gradient(to left, #f5b235, #ea7610, #ea7610, #f5b235);
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 30px #e6db00, 0 0 40px #f3a81e, 0 0 50px #ec972f;
+    }
+
+    to {
+        text-shadow: 0 0 30px #fff34d, 0 0 40px #f6ff4d, 0 0 50px #f6ff4d;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    #banner {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    #content p {
+        font-size: 1rem;
+    }
+
+    .header img {
+        width: 2rem;
+        height: 2rem;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .header h1 {
+        font-size: 1rem;
+    }
+
+    #form {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .formcontent {
+        width: 80%;
+        align-items: start;
+    }
+    
+    #form h1 {
+        font-size: 1.2rem;
+        color: white;
+        text-align: center;
+        animation: glow 1s ease-in-out infinite alternate;
+    }
+    
+    #form p {
+        font-weight: bolder;
+        font-size: 0.7rem;
+        background: linear-gradient(to left, #ffcc6c, #f39a4c, #f39a4c, #ffcc6c);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .input1 {
+        width: 100%;
+        height: 3vh;
+        border-radius: 10px;
+    }
+    
+    .input2 {
+        width: 100%;
+        height: 6vh;
+        border-radius: 10px;
+        resize: none;
+    }
+    
+    .input3{
+        background: linear-gradient(to left, #ffcc6c, #f39a4c, #f39a4c, #ffcc6c);
+        width: 70px;
+        font-size: 15px;
+        font-weight: 150;
+        padding: 5px;
+        border-radius: 10px;
+    }
+}
